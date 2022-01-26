@@ -5,6 +5,11 @@ import { FaShoppingBasket } from 'react-icons/fa';
 import NavBar from '../navbar/NavBar';
 
 const Header = () => {
+
+  function showCart() {
+    alert('click')
+  }
+
   return (
     <>
   <header>
@@ -13,7 +18,7 @@ const Header = () => {
           <div className='basket-div'>
               <FaShoppingBasket className="basket-icon" />
               <p className='digit'>0</p>
-              <button className='header-btn' type="button">Checkout</button>
+              <button onClick={showCart} className='header-btn' type="button">Varukorg</button>
           </div>
   </header>
       <NavBar/>
