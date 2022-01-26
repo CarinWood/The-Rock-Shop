@@ -58,7 +58,7 @@ form {
     width: 100%;
     color: white;
     font-size: 22px;
-    letter-spacing: 1.5px;
+    letter-spacing: 2px;
     word-spacing: 3px;
     margin-bottom: 20px;
     text-align: center;
@@ -68,18 +68,12 @@ form {
 
 .result-item a {
     text-decoration: none;
-    color: white;
+    color: whitesmoke;
 }
 
-.result-item:hover {
-    background-color: whitesmoke;
-    border-radius: 5px;
-}
+
 
 .result-item a:hover {
-    background-color: whitesmoke;
-    color: black;
-    border: none;
-    border-radius: 5px;
-    font-weight: 600;
+    color: white;
+    font-weight: 700;
 }

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import SearchBar from '../searchbar/SearchBar';
 import './header.css'
 import { FaShoppingBasket } from 'react-icons/fa';
@@ -7,11 +7,11 @@ import Cart from '../cart/Cart';
 
 const Header = () => {
 
-  const isShowingCart = false
+  const [ShowingCart, setShowingCart] = useState(false)
 
   function showCart() {
-    isShowingCart = 'hej';
-    alert(isShowingCart);
+    setShowingCart(!ShowingCart)
+ 
   }
 
   return (
@@ -26,7 +26,7 @@ const Header = () => {
           </div>
   </header>
       <NavBar/>
-      {isShowingCart && <Cart/>}
+      {ShowingCart && <Cart/>}
       
     </>
 

@@ -1,5 +1,5 @@
 .cart-container {
-    background-image: linear-gradient(to right, rgb(230, 183, 97), rgb(250, 164, 93));
+background-image: linear-gradient(to right, rgb(230, 183, 97), rgb(250, 164, 93));
 color: white;
 width: 30%;
 height: 60vh;
@@ -13,8 +13,6 @@ flex-direction: column;
 justify-content: flex-start;
 align-items: center;
 padding: 60px 15px 70px 15px;
-/*opacity: 0;*/
-transition: 0.4s ease-in-out;
 }
 
 .end-of-cart {
