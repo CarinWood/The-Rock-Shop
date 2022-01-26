@@ -3,11 +3,15 @@ import SearchBar from '../searchbar/SearchBar';
 import './header.css'
 import { FaShoppingBasket } from 'react-icons/fa';
 import NavBar from '../navbar/NavBar';
+import Cart from '../cart/Cart';
 
 const Header = () => {
 
+  const isShowingCart = false
+
   function showCart() {
-    alert('click')
+    isShowingCart = 'hej';
+    alert(isShowingCart);
   }
 
   return (
@@ -22,6 +26,8 @@ const Header = () => {
           </div>
   </header>
       <NavBar/>
+      {isShowingCart && <Cart/>}
+      
     </>
 
   )

@@ -20,8 +20,11 @@
 }
 
 .image-container {
-    max-width: 55%;
-    
+    max-width: 55%;  
+}
+
+.album-container:target {
+    border: 1px solid white;
 }
 
 .album-artist {

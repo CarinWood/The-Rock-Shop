@@ -1,8 +1,8 @@
 import React from 'react';
 
 const Product = ({album}) => {
-  return <div className='album-container'>
-      <div className='image-container'>
+  return <div id={album.id} className='album-container'>
+      <div  className='image-container'>
           <img className='img' src={album.img}  />
       </div>
       <h1 className='album-artist'>{album.artist}</h1>

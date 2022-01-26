@@ -19,6 +19,12 @@ const SearchBar = () => {
   const shouldDisplayDeleteBtn = searchValue.length > 0;
   const displayResults = searchValue.length > 0;
 
+  const filteredAlbums = Albums.filter(album => {
+    return album.artist.toLowerCase().includes(searchValue.toLowerCase())
+})
+
+  
+
  
 
   return (
@@ -37,15 +43,22 @@ const SearchBar = () => {
             className='delete-input'
             type="button" 
             onClick={handleClearClick}>
-                <i class='bx bx-x'></i>
+                <i className='bx bx-x'></i>
          </button>
          }
   </form>
 
          {displayResults &&
               <ul className='result-list'>
-                  {Albums.map((album) => (
-                        <li key={album.id} className='result-item'>{album.artist}</li>
+                  {filteredAlbums.map((album) => (
+                        <li 
+                            className='result-item'
+                            key={album.id} 
+                           >
+                              <a href={album.link}>
+                              {album.artist}
+                              </a>
+                        </li>
                   ))}
               </ul>
        }

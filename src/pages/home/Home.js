@@ -11,7 +11,7 @@ const Home = () => {
          Glöm inte att hos oss får du alltid fri frakt om du handlar för 259:- eller mer! 
       </p>
       <Products/>
-      <Cart/>
+    
   </div>;
 };
 

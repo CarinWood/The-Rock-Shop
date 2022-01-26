@@ -66,7 +66,17 @@ form {
     cursor: pointer;
 }
 
+.result-item a {
+    text-decoration: none;
+    color: white;
+}
+
 .result-item:hover {
+    background-color: whitesmoke;
+    border-radius: 5px;
+}
+
+.result-item a:hover {
     background-color: whitesmoke;
     color: black;
     border: none;
