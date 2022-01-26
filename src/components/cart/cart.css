@@ -40,8 +40,8 @@ transition: 0.4s ease-in-out;
 }
 
 .checkout-btn:hover {
-    background-color: orange;
-    color: black;
+   
+    opacity: 0.6;
     transition: 0.3s ease-in-out;
 }
 
