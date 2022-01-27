@@ -1,14 +1,16 @@
+
 import './App.css';
 import Header from './components/header/Header';
-import Home from './pages/home/Home';
+import Routing from './routing/Routing'
 
 function App() {
   return (
-    <div className="App">
-      <Header/>
-      <Home/>
-    </div>
-  );
+    
+      <Routing>
+        <Header/>
+      </Routing>
+   
+  )
 }
 
 export default App;

@@ -1,12 +1,13 @@
 # Installera följande 
 
 ``shell
+
    npm install react-icons
+   npm install react-router-dom@6
 ``
 
 <details>
 <summary> # Getting Started with Create React App </summary>
-
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
