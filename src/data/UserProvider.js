@@ -1,15 +1,13 @@
-import {useState, createContext} from 'react';
+import {createContext} from 'react';
 
-export const userContext = createContext()
+export const UserContext = createContext()
 
 const UserProvider = (props) => {
-    const [authenticatedUser, setAuthenticatedUser] =useState('')
-
 
   return (
-      <userContext.Provider value={[authenticatedUser, setAuthenticatedUser]}>
+      <UserContext.Provider value={'hej'}>
           {props.children}
-      </userContext.Provider>
+      </UserContext.Provider>
   )
 };
 

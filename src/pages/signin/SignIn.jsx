@@ -1,10 +1,12 @@
 import React, {useState, useContext} from 'react';
 import { useNavigate} from 'react-router-dom'
 import './signin.css'
+import { UserContext } from '../../data/UserProvider';
 
 const SignIn = () => {
-
-  const navigate = useNavigate()
+const hej = useContext(UserContext);
+  
+const navigate = useNavigate()
 
     const existingUser = {
       user: 'Carin',
@@ -37,6 +39,7 @@ const SignIn = () => {
                   <label>Lösenord:</label>
                   <input className='input' type="password" 
                   onChange={event => setPassword(event.target.value)}></input>
+               
               </form>
 
               <button 
@@ -46,6 +49,7 @@ const SignIn = () => {
               >
                 Logga in
               </button>
+              {hej}
         </div>
       
         
