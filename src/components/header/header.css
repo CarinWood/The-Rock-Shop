@@ -20,6 +20,7 @@ header {
 }
 
 .logo {
+    text-decoration: none;
     color: black;
     font-family: 'Bebas Neue', sans-serif;
     font-size: 35px;
@@ -28,6 +29,11 @@ header {
     word-spacing: 5px;
     width: 30%;
 }
+
+.logo-link {
+    text-decoration: none;
+    color: black;
+} 
 
 .basket-icon {
     font-size: 35px;

@@ -1,10 +1,12 @@
 import React, {useState, useContext} from 'react';
 import { useNavigate} from 'react-router-dom'
 import './signin.css'
-import { UserContext } from '../../data/UserProvider';
+import { LoginContext } from '../../data/LoginProvider';
 
 const SignIn = () => {
-const hej = useContext(UserContext);
+
+
+const {loggedIn, setLoggedIn} = useContext(LoginContext)
   
 const navigate = useNavigate()
 
@@ -18,7 +20,9 @@ const navigate = useNavigate()
 
     function checkUser() {
       if(username === existingUser.user && password === existingUser.password) {
+          setLoggedIn(!loggedIn);
           navigate('/signed-in')
+       
       } else {
         alert('Du skrev fel användarnamn och/eller lösenord!')
       }
@@ -49,7 +53,7 @@ const navigate = useNavigate()
               >
                 Logga in
               </button>
-              {hej}
+       
         </div>
       
         

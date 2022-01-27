@@ -7,3 +7,123 @@
     align-items: center;
     justify-content: flex-start;
 }
+
+.sign-out-btn {
+    margin-top: 18px;
+    background-color: black;
+    color: orange;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    padding: 10px 8px 10px 8px;
+    border: none;
+    border-radius: 5px;
+    width: 130px;
+    cursor:pointer;
+}
+
+.sign-out-btn:hover {
+    opacity: 0.5;
+}
+
+.membership-card {
+    margin-top: 100px;
+    width: 800px;
+    height: 45vh;
+    border-radius: 10px;
+    background-color: #000;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;   
+}
+
+.club {
+    font-size: 30px;
+    letter-spacing: 2px;
+    margin-left: 8px;
+
+}
+
+.logotype {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 45px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+    color: white;
+}
+
+.gold {
+    color: goldenrod;
+    font-size: 20px;
+    letter-spacing: 1.5px;
+}
+
+.circle {
+   
+    width: 240px;
+    height: 240px;
+    border: none;
+    border-radius: 50%;
+    background-color: goldenrod;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 60px;
+    margin-top: 50px;
+   
+}
+
+.inner-circle {
+    width: 180px;
+    height: 180px;
+    border: none;
+    border-radius: 50%;
+    background-color: black;
+    margin-left: 30px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.inner-text {
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin: 0;
+    padding:0;
+    color: goldenrod;
+}
+
+.membership-level {
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+.main-text {
+   
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-left: 60px;
+    margin-bottom: 30px;
+}
+
+.text {
+    line-height: 1.5em;
+}
+
+.sale {
+    font-weight: 700;
+}
+
+.tickets {
+    cursor: pointer;
+    text-decoration: underline;
+}

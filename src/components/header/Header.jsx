@@ -5,6 +5,7 @@ import { FaShoppingBasket } from 'react-icons/fa';
 import NavBar from '../navbar/NavBar';
 import Cart from '../cart/Cart';
 
+
 const Header = () => {
 
   const [ShowingCart, setShowingCart] = useState(false)
@@ -17,7 +18,9 @@ const Header = () => {
   return (
     <>
   <header>
-      <div className='logo'>The Rock Shop</div>
+     
+      <div className='logo'> The Rock Shop</div>
+     
       <SearchBar/>
           <div className='basket-div'>
               <FaShoppingBasket className="basket-icon" />
