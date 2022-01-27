@@ -22,3 +22,7 @@ nav {
     letter-spacing: 1.5px;
     cursor: pointer;
 }
+
+.link {
+    text-decoration: none;
+}
