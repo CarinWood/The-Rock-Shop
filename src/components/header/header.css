@@ -30,10 +30,17 @@ header {
     width: 30%;
 }
 
-.logo-link {
-    text-decoration: none;
-    color: black;
-} 
+.membername {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.logout {
+    text-decoration: underline;
+    cursor: pointer;
+    font-size: 22px;
+    font-weight: 400;
+}
 
 .basket-icon {
     font-size: 35px;
