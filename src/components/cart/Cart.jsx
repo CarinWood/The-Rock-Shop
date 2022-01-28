@@ -2,7 +2,7 @@ import React from 'react';
 import './cart.css';
 import { CartContext } from '../../context/CartContext';
 import { useContext } from 'react/cjs/react.development';
-import { FaShoppingBasket } from 'react-icons/fa';
+import { FaShoppingBasket, FaTrashAlt, FaPlusCircle, FaMinusCircle } from 'react-icons/fa';
 
 const Cart = () => {
 
@@ -11,16 +11,31 @@ const Cart = () => {
   return (
   
     <div className='cart-container'>
-        <h1 className='cart-headline'>Varor({cart.length})</h1>
-        
+              
         {cart.length === 0 && <h1 className='placehoder-text'><FaShoppingBasket className='cart-logo'/>Din varukorg är tom </h1>}
             
-            
+            <div className='cart-outer-wrapper'>
             {cart.map((item) => (
-              <div key={item.id}>
-              <img src={item.img} alt={item.artist} />
+              <div className='cart-wrapper' key={item.id}>
+                <div className='cart-img-container'>
+                    <img className='cart-img' src={item.img} alt={item.artist} />
+                </div>
+                <div>
+                  <h3 className='cart-artist'>{item.artist}</h3>
+                      <div className='info-div'>
+                          <FaMinusCircle className='plus-sign'/>
+                          <p className='number'>1</p>
+                          <FaPlusCircle className='plus-sign' />
+                 
+                        <FaTrashAlt className='trash-can'/>
+                        <h4 className='price-per-album'>{item.price} :-/st.</h4>
+                        <h2 className='line-total'>99:-</h2>
+                        
+                      </div>
+                </div>
               </div>
             ))}
+            </div>
             
             
             <div className='end-of-cart'>

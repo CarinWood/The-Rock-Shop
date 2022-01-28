@@ -2,7 +2,7 @@
 background-image: linear-gradient(to right, rgb(230, 183, 97), rgb(250, 164, 93));
 color: white;
 width: 30%;
-height: 60vh;
+height: 75vh;
 position: absolute;
 right: 0;
 top: 10;
@@ -12,7 +12,15 @@ display: flex;
 flex-direction: column;
 justify-content: flex-start;
 align-items: center;
-padding: 60px 15px 70px 15px;
+
+
+}
+
+.cart-outer-wrapper {
+    padding-top: 0px;
+    overflow-y:scroll;
+    width: 100%;
+    margin-bottom: 70px;
 }
 
 .cart-headline {
@@ -74,3 +82,88 @@ padding: 60px 15px 70px 15px;
     letter-spacing: 1.5px;
 }
 
+
+
+
+/* Cart Products styling */
+
+.cart-wrapper {   
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 20px;
+    overflow-x: unset;
+   
+}
+
+.cart-img-container {
+    padding-top: 0px;
+    width: 18%;
+    height: 10%;
+    margin-right: 10px;
+    margin-left: 15px;
+}
+
+.cart-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+  
+}
+
+.cart-artist {
+    margin-bottom: 0px;
+    color: black;
+}
+
+.price-per-album {
+    font-size: 15px;
+    color: black;
+    opacity: 0.7;
+}
+
+.info-div {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center
+  
+}
+
+.trash-can {
+  
+    color: black;
+    font-size: 20px;
+    cursor: pointer;
+    margin-right: 15px;
+    margin-left: 30px;
+}
+
+.trash-can:hover {
+    opacity: 0.5;
+}
+
+.plus-sign {
+    border: none;
+    width: 30px;
+    color: black;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.plus-sign:hover {
+    opacity: 0.5;
+}
+
+.number {
+    margin-right: 6px;
+    margin-left: 6px;
+    color: black;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.line-total {
+    color: orangered;
+    margin-left: 80px;
+}

@@ -6,9 +6,14 @@ const Product = ({album}) => {
 
   const [cart, setCart] = useContext(CartContext)
 
-  function addToCart() {
-      const product = {title: album.title, price: album.price}
-      setCart(curr => [...curr, product])
+  const addToCart = (album) => {
+    const productExist = cart.find((item) => item.id === album.id)
+    if (productExist) {
+      setCart(cart.map((item) => item.id === album.id ? 
+      {...productExist, quantity: productExist.quantity + 1} : item))
+    } else {
+      setCart([...cart, {...album, quantity: 1}])
+    }
   }
 
 
@@ -19,9 +24,9 @@ const Product = ({album}) => {
             </div>
          <h1 className='album-artist'>{album.artist}</h1>
          <p className='album-title'>{album.title}</p>
-         <p className='album-price'>{album.price} kr</p>
+         <p className='album-price'>{album.price} :-</p>
 
-        <button className='buy-btn' onClick={addToCart}>Köp</button>
+        <button className='buy-btn' onClick={() => addToCart(album)}>Köp</button>
   </div>;
 };
 
