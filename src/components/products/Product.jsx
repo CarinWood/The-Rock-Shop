@@ -15,7 +15,7 @@ const Product = ({album}) => {
 
   return <div id={album.id} className='album-container'>
             <div className='image-container'>
-                <img className='img' src={album.img}  />
+                <img className='img' src={album.img} alt={album.artist}  />
             </div>
          <h1 className='album-artist'>{album.artist}</h1>
          <p className='album-title'>{album.title}</p>

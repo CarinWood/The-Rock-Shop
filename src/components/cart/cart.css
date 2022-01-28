@@ -28,7 +28,7 @@ padding: 60px 15px 70px 15px;
     font-size: 20px;
     font-weight: 800;
     letter-spacing: 1.5px;
-    padding: 6px;
+    padding: 8px 6px 8px 6px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -38,9 +38,11 @@ padding: 60px 15px 70px 15px;
 }
 
 .checkout-btn:hover {
-   
     color: rgb(248, 188, 77);
-    transition: 0.3s ease-in-out;
+}
+
+.checkout-btn:active {
+    transform: translateY(2px);
 }
 
 .summary {

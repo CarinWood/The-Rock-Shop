@@ -59,9 +59,11 @@
 }
 
 .buy-btn:hover {
-    background: orange;
-    color: black;
-    transition: 0.4s ease-in-out;
+    color: rgb(248, 188, 77);   
+}
+
+.buy-btn:active {
+    transform: translateY(2px);
 }
 
 .img {
