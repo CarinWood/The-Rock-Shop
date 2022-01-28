@@ -11,7 +11,7 @@ const Albums = [
   {
     artist: 'Pink Floyd',
     title:'Dark Side of the Moon',
-    price: 99,
+    price: 69,
     img: Pink,
     id: 'pinkf',
     link: '#pinkf',
@@ -20,7 +20,7 @@ const Albums = [
   {
     artist: 'Rolling Stones',
     title:'Undercover',
-    price: 199,
+    price: 55,
     img: Rolling,
     id: 'rollings',
     link: '#rollings',
@@ -28,7 +28,7 @@ const Albums = [
   {
     artist: 'Bruce Springsteen',
     title:'Born in the USA',
-    price: 299,
+    price: 39,
     img: Bruce,
     id: 'bruce',
     link: '#bruce',
@@ -36,7 +36,7 @@ const Albums = [
   {
     artist: 'AC/DC',
     title:'Fly on the Wall',
-    price: 269,
+    price: 70,
     img: ACDC,
     id: 'acdc',
     link: '#acdc',
@@ -44,7 +44,7 @@ const Albums = [
   {
     artist: 'Creedence Clearwater',
     title:'16 klassiker',
-    price: 59,
+    price: 25,
     img: Creedence,
     id: 'creed',
     link: '#creed',
@@ -52,7 +52,7 @@ const Albums = [
   {
     artist: 'Led Zeppelin',
     title:'No Restrictions',
-    price: 99,
+    price: 34,
     img: LedZ,
     id: 'zepp',
     link: '#zepp',
@@ -60,7 +60,7 @@ const Albums = [
   {
     artist: 'T-shirt',
     title:'AC/DC T-shirt',
-    price: 199,
+    price: 66,
     img: Tshirt,
     id: 'shirt',
     link: '#shirt',

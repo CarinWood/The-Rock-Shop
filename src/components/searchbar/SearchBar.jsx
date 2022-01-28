@@ -16,6 +16,10 @@ const SearchBar = () => {
     setSearchValue('');
   }
 
+  function clear() {
+    setSearchValue('')
+  }
+
   const shouldDisplayDeleteBtn = searchValue.length > 0;
   const displayResults = searchValue.length > 0;
 
@@ -55,7 +59,7 @@ const SearchBar = () => {
                             className='result-item'
                             key={album.id} 
                            >
-                              <a href={album.link}>
+                              <a onClick={clear} href={album.link}>
                               {album.artist}
                               </a>
                         </li>

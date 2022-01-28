@@ -6,11 +6,14 @@ import NavBar from '../navbar/NavBar';
 import Cart from '../cart/Cart';
 import { LoginContext } from '../../data/LoginProvider';
 import { useNavigate, useNavigation } from 'react-router-dom'
+import { CartContext } from '../../data/CartContext';
 
 
 const Header = () => {
 
   const navigation = useNavigate()
+
+  const [cart, setCart] = useContext(CartContext)
 
   const {loggedIn, setLoggedIn} = useContext(LoginContext);
 
@@ -36,10 +39,10 @@ const Header = () => {
 
           {loggedIn? <p className='membername'>Carin <span onClick={logOutFunc} className='logout'>(Logga ut)</span></p>: null}
 
-          <div className='basket-div'>
+          <div onClick={showCart} className='basket-div'>
               <FaShoppingBasket className="basket-icon" />
-              <p className='digit'>0</p>
-              <button onClick={showCart} className='header-btn' type="button">Varukorg</button>
+              <p className='digit'>{cart.length}</p>
+              <button  className='header-btn' type="button">Varukorg</button>
           </div>
   </header>
       <NavBar/>

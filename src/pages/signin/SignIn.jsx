@@ -12,11 +12,11 @@ const navigate = useNavigate()
 
     const existingUser = {
       user: 'Carin',
-      password: 'pass'
+      password: 'password'
     }
 
-    const [username, setUsername] = useState('')
-    const [password, setPassword] = useState('')
+    const [username, setUsername] = useState('Carin')
+    const [password, setPassword] = useState('password')
 
     function checkUser() {
       if(username === existingUser.user && password === existingUser.password) {
@@ -36,13 +36,17 @@ const navigate = useNavigate()
               <form>
                   <label>Användarnamn:</label>
                   <input className="input" type="text" 
-                  onChange={event => setUsername(event.target.value)} />
+                  onChange={event => setUsername(event.target.value)}
+                  value={username}
+                  />
               </form>
 
               <form>
                   <label>Lösenord:</label>
                   <input className='input' type="password" 
-                  onChange={event => setPassword(event.target.value)}></input>
+                  onChange={event => setPassword(event.target.value)}
+                  value={password}
+                    />
                
               </form>
 

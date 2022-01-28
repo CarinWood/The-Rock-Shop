@@ -45,6 +45,7 @@ header {
 .basket-icon {
     font-size: 35px;
     margin-right: 20px;
+    cursor: pointer;
    
 }
 

@@ -39,7 +39,7 @@ padding: 60px 15px 70px 15px;
 
 .checkout-btn:hover {
    
-    opacity: 0.6;
+    color: rgb(248, 188, 77);
     transition: 0.3s ease-in-out;
 }
 
