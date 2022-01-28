@@ -1,9 +1,9 @@
 import './App.css';
 import Header from './components/header/Header';
 import Routing from './routing/Routing'
-import {LoginContext} from './data/LoginProvider'
+import {LoginContext} from './context/LoginProvider'
 import {useState} from 'react'
-import { CartProvider } from './data/CartContext';
+import { CartProvider } from './context/CartContext';
 
 function App() {
 

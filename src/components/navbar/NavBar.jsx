@@ -1,7 +1,7 @@
 import React, {useContext} from 'react';
 import './navbar.css'
 import { Link } from 'react-router-dom'
-import { LoginContext } from '../../data/LoginProvider';
+import { LoginContext } from '../../context/LoginProvider';
 
 const NavBar = () => {
   const {loggedIn, setLoggedIn} = useContext(LoginContext);

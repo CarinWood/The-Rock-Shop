@@ -4,9 +4,9 @@ import './header.css'
 import { FaShoppingBasket } from 'react-icons/fa';
 import NavBar from '../navbar/NavBar';
 import Cart from '../cart/Cart';
-import { LoginContext } from '../../data/LoginProvider';
-import { useNavigate, useNavigation } from 'react-router-dom'
-import { CartContext } from '../../data/CartContext';
+import { LoginContext } from '../../context/LoginProvider';
+import { useNavigate } from 'react-router-dom'
+import { CartContext } from '../../context/CartContext';
 
 
 const Header = () => {

@@ -1,6 +1,6 @@
 import React, {useContext} from 'react';
 
-import { CartContext } from '../../data/CartContext';
+import { CartContext } from '../../context/CartContext';
 
 const Product = ({album}) => {
 
