@@ -84,8 +84,10 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 Jag använde mig av någonting som kallas short circuit för att öppna och stänga kundkorgen. (Skriv mer om användningen av short circuit)
 
-## Svårigheter
+## Svårt och lätt
 
 Det som har varit mest utmanande för mig i det här projektet har varit att få ihop helheten och översätta all funktionalitet från vanille Javascript till JSX i React. Jag har fått tänka på ett nytt sätt och i vissa fall lära nytt, t.ex. reduce-metoden för att addera ihop priser och kvantiteter.
 
 Fri frakt-logiken var någonting jag tyckte var extra svårt. Jag provade att göra det med en funktion först, men det blev inte rätt och jag visste inte hur jag skulle anropa funktionen automatiskt. Det landade till slut på en ternary operator. Om den totala summan överstiger 259 kronor eller mer, ska meddelandet "Det har fri frakt!" visas. I annat fall ska 259 minus den totala summan visas.
+
+Något som var väldigt lätt var att få till radens total. Först gjorde jag det mycket svårare än det behövde vara och försökte skicka iväg värden i en funktion, men när jag tänkte efter lite så var det faktiskt bara att multiplicera item.quantity med item.price inom måsvingar.
