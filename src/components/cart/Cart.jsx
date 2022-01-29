@@ -66,7 +66,7 @@ const Cart = () => {
             <div className='end-of-cart'>
                     <button className='checkout-btn'>Betala</button>
                     <div className='freightAndPrice'>
-                      <p>Du har {leftToFreeFreight - totalPrice} :- kvar till fri frakt</p>
+                    {totalPrice >= 255 ? <p>Du har fri frakt!</p>  :<p>Du har {leftToFreeFreight - totalPrice} :- kvar till fri frakt</p>}
                       <h3 className='summary'>Summa:<span className='red-text'> {totalPrice} :- </span></h3>
               
                     </div>

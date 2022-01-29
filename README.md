@@ -88,3 +88,4 @@ Jag använde mig av någonting som kallas short circuit för att öppna och stä
 
 Det som har varit mest utmanande för mig i det här projektet har varit att få ihop helheten och översätta all funktionalitet till jsx i React. Jag har fått tänka på ett nytt sätt och i vissa fall lära nytt, t.ex. reduce-metoden för att lägga ihop priser.
 
+Fri frakt
