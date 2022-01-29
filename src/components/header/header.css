@@ -33,6 +33,8 @@ header {
 .membername {
     font-size: 25px;
     font-weight: 600;
+    position: absolute;
+    right: 20%;
 }
 
 .logout {

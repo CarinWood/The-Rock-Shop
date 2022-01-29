@@ -1,12 +1,13 @@
 import React, {useState, useContext} from 'react';
 import './cart.css';
 import { CartContext } from '../../context/CartContext';
-import { FaShoppingBasket, FaPlusCircle, FaMinusCircle } from 'react-icons/fa';
+import { FaShoppingBasket, FaPlusCircle, FaMinusCircle, FaTrashAlt } from 'react-icons/fa';
 import { calculateNewValue } from '@testing-library/user-event/dist/utils';
 
 const Cart = () => {
 
   const [cart, setCart] = useContext(CartContext)
+ 
 
 
   const handleRemoveProduct = (product) => {
@@ -29,9 +30,14 @@ const Cart = () => {
 
   }
 
-  
+ 
 
+  function handlePayment() {
 
+    alert('Tack för ditt köp hos The Rock Shop!');
+    setCart([])   
+   
+  }
  
   
 
@@ -50,10 +56,12 @@ const Cart = () => {
   return (
   
     <div className='cart-container'>
+    
               
         {cart.length === 0 && <h1 className='placehoder-text'><FaShoppingBasket className='cart-logo'/>Din varukorg är tom </h1>}
             
             <div className='cart-outer-wrapper'>
+           
             {cart.map((item) => (
               <div className='cart-wrapper' key={item.id}>
                 <div className='cart-img-container'>
@@ -78,7 +86,7 @@ const Cart = () => {
             
             
             <div className='end-of-cart'>
-                    <button className='checkout-btn'>Betala</button>
+                    <button onClick={handlePayment} className='checkout-btn'>Betala</button>
                     <div className='freightAndPrice'>
                     {totalPrice >= 259 ? <p>Du har uppnått fri frakt!</p>  :<p>Du har {leftToFreeFreight - totalPrice} :- kvar till fri frakt</p>}
                       <h3 className='summary'>Summa:<span className='red-text'> {totalPrice} :- </span></h3>

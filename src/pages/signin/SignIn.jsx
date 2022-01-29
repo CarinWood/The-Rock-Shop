@@ -35,7 +35,7 @@ const navigate = useNavigate()
         
               <form>
                   <label>Användarnamn:</label>
-                  <input className="input" type="text" 
+                  <input className="input-field" type="text" 
                   onChange={event => setUsername(event.target.value)}
                   value={username}
                   />
@@ -43,7 +43,7 @@ const navigate = useNavigate()
 
               <form>
                   <label>Lösenord:</label>
-                  <input className='input' type="password" 
+                  <input className='input-field' type="password" 
                   onChange={event => setPassword(event.target.value)}
                   value={password}
                     />

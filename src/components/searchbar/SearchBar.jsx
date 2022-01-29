@@ -33,7 +33,7 @@ const SearchBar = () => {
 
   return (
     <>
-  <form>
+  <form className='search-container'>
       <input 
       className='searchbar' 
       type="text" 

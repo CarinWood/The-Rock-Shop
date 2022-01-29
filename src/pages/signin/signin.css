@@ -8,18 +8,19 @@
 }
 
 .signin-card {
+    width: 500px;
     border-radius: 8px;
     background-image: linear-gradient(to right, rgb(230, 183, 97), rgb(250, 164, 93));
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    padding: 30px;
+    padding: 30px 50px;
     margin-top: 100px;
     position: relative;
 }
 
-.input {
+.input-field {
     font-size: 20px;
     border: none;
     border-radius: 5px;
@@ -36,7 +37,7 @@ label {
     font-size: 20px;
     letter-spacing: 1px;
     margin-bottom: 6px;
-    text-align: center;
+  
 }
 
 form {
@@ -45,7 +46,7 @@ form {
     justify-content: center;
     align-items: center;
     margin-bottom:20px;
-    margin-left: 150px;
+
 
  
 }
