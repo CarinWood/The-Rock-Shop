@@ -79,3 +79,12 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
 </details>
+
+## Några kodexempel
+
+Jag använde mig av någonting som kallas short circuit för att öppna och stänga kundkorgen. (Skriv mer om användningen av short circuit)
+
+## Svårigheter
+
+Det som har varit mest utmanande för mig i det här projektet har varit att få ihop helheten och översätta all funktionalitet till jsx i React. Jag har fått tänka på ett nytt sätt och i vissa fall lära nytt, t.ex. reduce-metoden för att lägga ihop priser.
+

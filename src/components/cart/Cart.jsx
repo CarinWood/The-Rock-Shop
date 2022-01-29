@@ -1,12 +1,37 @@
-import React from 'react';
+import React, {useState, useContext} from 'react';
 import './cart.css';
 import { CartContext } from '../../context/CartContext';
-import { useContext } from 'react/cjs/react.development';
-import { FaShoppingBasket, FaTrashAlt, FaPlusCircle, FaMinusCircle } from 'react-icons/fa';
+import { FaShoppingBasket, FaPlusCircle, FaMinusCircle } from 'react-icons/fa';
+import { calculateNewValue } from '@testing-library/user-event/dist/utils';
 
 const Cart = () => {
 
   const [cart, setCart] = useContext(CartContext)
+
+  const handleRemoveProduct = (product) => {
+    const productExist = cart.find((item) => item.id === product.id)
+    if (productExist.quantity === 1) {
+          setCart(cart.filter((item) => item.id !== product.id ))
+    } else {
+      setCart(cart.map((item) => item.id == product.id ? {...productExist, quantity: productExist.quantity -1} : item ))
+    }
+  }
+
+  
+
+
+ 
+  
+
+ const totalPrice = cart.reduce((price, item) => price + item.quantity * item.price, 0)
+
+
+ const leftToFreeFreight = 255
+
+
+ 
+
+
 
   return (
   
@@ -23,14 +48,14 @@ const Cart = () => {
                 <div>
                   <h3 className='cart-artist'>{item.artist}</h3>
                       <div className='info-div'>
-                          <FaMinusCircle className='plus-sign'/>
-                          <p className='number'>1</p>
+                          <FaMinusCircle className='plus-sign' onClick={() => handleRemoveProduct(item)}/>
+                          <p className='number'>{item.quantity}</p>
                           <FaPlusCircle className='plus-sign' />
                  
-                        <FaTrashAlt className='trash-can'/>
+                     
                         <h4 className='price-per-album'>{item.price} :-/st.</h4>
-                        <h2 className='line-total'>99:-</h2>
-                        
+                        <h2 className='line-total'>0 :-</h2>
+                     
                       </div>
                 </div>
               </div>
@@ -40,7 +65,13 @@ const Cart = () => {
             
             <div className='end-of-cart'>
                     <button className='checkout-btn'>Betala</button>
-                    <h3 className='summary'>Summa:<span> 0 </span>kr</h3>
+                    <div className='freightAndPrice'>
+                      <p>Du har {leftToFreeFreight - totalPrice} :- kvar till fri frakt</p>
+                      <h3 className='summary'>Summa:<span className='red-text'> {totalPrice} :- </span></h3>
+              
+                    </div>
+             
+                    
             </div>
     </div>
   )

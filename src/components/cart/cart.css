@@ -80,6 +80,7 @@ align-items: center;
     color: white;
     font-size: 20px;
     letter-spacing: 1.5px;
+    margin-top: 0px;
 }
 
 
@@ -166,4 +167,20 @@ align-items: center;
 .line-total {
     color: orangered;
     margin-left: 80px;
+}
+
+.freightAndPrice {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.freight {
+    margin-bottom: 5px;
+}
+
+.red-text {
+    margin-left: 10px;
+    color: orangered;
 }

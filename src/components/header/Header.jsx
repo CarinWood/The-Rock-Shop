@@ -41,7 +41,7 @@ const Header = () => {
 
           <div onClick={showCart} className='basket-div'>
               <FaShoppingBasket className="basket-icon" />
-              <p className='digit'>{cart.length}</p>
+              <p className='digit'>{cart.reduce((total, quantity) => total = total + quantity.quantity, 0)}</p>
               <button  className='header-btn' type="button">Varukorg</button>
           </div>
   </header>

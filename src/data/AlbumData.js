@@ -15,6 +15,7 @@ const Albums = [
     img: Pink,
     id: 'pinkf',
     link: '#pinkf',
+    quantity: 1,
    
   },
   {
@@ -24,6 +25,7 @@ const Albums = [
     img: Rolling,
     id: 'rollings',
     link: '#rollings',
+    quantity: 1,
   },
   {
     artist: 'Bruce Springsteen',
@@ -32,6 +34,7 @@ const Albums = [
     img: Bruce,
     id: 'bruce',
     link: '#bruce',
+    quantity: 1,
   },
   {
     artist: 'AC/DC',
@@ -40,6 +43,7 @@ const Albums = [
     img: ACDC,
     id: 'acdc',
     link: '#acdc',
+    quantity: 1,
   },
   {
     artist: 'Creedence Clearwater',
@@ -48,6 +52,7 @@ const Albums = [
     img: Creedence,
     id: 'creed',
     link: '#creed',
+    quantity: 1,
   },
   {
     artist: 'Led Zeppelin',
@@ -56,6 +61,7 @@ const Albums = [
     img: LedZ,
     id: 'zepp',
     link: '#zepp',
+    quantity: 1,
   },
   {
     artist: 'T-shirt',
@@ -64,6 +70,7 @@ const Albums = [
     img: Tshirt,
     id: 'shirt',
     link: '#shirt',
+    quantity: 1,
   },
   {
     artist: 'Mugg',
@@ -72,6 +79,7 @@ const Albums = [
     img: mugg,
     id: 'mugg',
     link:'#mugg',
+    quantity: 1,
   },
   
 ];
