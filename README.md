@@ -86,6 +86,6 @@ Jag använde mig av någonting som kallas short circuit för att öppna och stä
 
 ## Svårigheter
 
-Det som har varit mest utmanande för mig i det här projektet har varit att få ihop helheten och översätta all funktionalitet till jsx i React. Jag har fått tänka på ett nytt sätt och i vissa fall lära nytt, t.ex. reduce-metoden för att lägga ihop priser.
+Det som har varit mest utmanande för mig i det här projektet har varit att få ihop helheten och översätta all funktionalitet från vanille Javascript till JSX i React. Jag har fått tänka på ett nytt sätt och i vissa fall lära nytt, t.ex. reduce-metoden för att addera ihop priser och kvantiteter.
 
-Fri frakt
+Fri frakt-logiken var någonting jag tyckte var extra svårt. Jag provade att göra det med en funktion först, men det blev inte rätt och jag visste inte hur jag skulle anropa funktionen automatiskt. Det landade till slut på en ternary operator. Om den totala summan överstiger 259 kronor eller mer, ska meddelandet "Det har fri frakt!" visas. I annat fall ska 259 minus den totala summan visas.

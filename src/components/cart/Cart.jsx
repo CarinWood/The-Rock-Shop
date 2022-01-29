@@ -8,6 +8,7 @@ const Cart = () => {
 
   const [cart, setCart] = useContext(CartContext)
 
+
   const handleRemoveProduct = (product) => {
     const productExist = cart.find((item) => item.id === product.id)
     if (productExist.quantity === 1) {
@@ -15,6 +16,17 @@ const Cart = () => {
     } else {
       setCart(cart.map((item) => item.id == product.id ? {...productExist, quantity: productExist.quantity -1} : item ))
     }
+  }
+
+  const handleAddProduct = (album) => {
+    const productExist = cart.find((item) => item.id === album.id)
+    if (productExist) {
+      setCart(cart.map((item) => item.id === album.id ? 
+      {...productExist, quantity: productExist.quantity + 1} : item))
+    } else {
+      setCart([...cart, {...album, quantity: 1}])
+    }
+
   }
 
   
@@ -26,7 +38,9 @@ const Cart = () => {
  const totalPrice = cart.reduce((price, item) => price + item.quantity * item.price, 0)
 
 
- const leftToFreeFreight = 255
+ const leftToFreeFreight = 259
+
+
 
 
  
@@ -50,11 +64,11 @@ const Cart = () => {
                       <div className='info-div'>
                           <FaMinusCircle className='plus-sign' onClick={() => handleRemoveProduct(item)}/>
                           <p className='number'>{item.quantity}</p>
-                          <FaPlusCircle className='plus-sign' />
+                          <FaPlusCircle className='plus-sign' onClick={() => handleAddProduct(item)} />
                  
                      
                         <h4 className='price-per-album'>{item.price} :-/st.</h4>
-                        <h2 className='line-total'>0 :-</h2>
+                        <h2 className='line-total'>{item.quantity * item.price}:-</h2>
                      
                       </div>
                 </div>
@@ -66,7 +80,7 @@ const Cart = () => {
             <div className='end-of-cart'>
                     <button className='checkout-btn'>Betala</button>
                     <div className='freightAndPrice'>
-                    {totalPrice >= 255 ? <p>Du har fri frakt!</p>  :<p>Du har {leftToFreeFreight - totalPrice} :- kvar till fri frakt</p>}
+                    {totalPrice >= 259 ? <p>Du har uppnått fri frakt!</p>  :<p>Du har {leftToFreeFreight - totalPrice} :- kvar till fri frakt</p>}
                       <h3 className='summary'>Summa:<span className='red-text'> {totalPrice} :- </span></h3>
               
                     </div>

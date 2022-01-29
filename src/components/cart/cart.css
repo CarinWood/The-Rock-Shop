@@ -122,26 +122,13 @@ align-items: center;
     font-size: 15px;
     color: black;
     opacity: 0.7;
+    margin-left: 10px;
 }
 
 .info-div {
     display: flex;
     justify-content: flex-start;
     align-items: center
-  
-}
-
-.trash-can {
-  
-    color: black;
-    font-size: 20px;
-    cursor: pointer;
-    margin-right: 15px;
-    margin-left: 30px;
-}
-
-.trash-can:hover {
-    opacity: 0.5;
 }
 
 .plus-sign {
@@ -174,6 +161,7 @@ align-items: center;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    color: black;
 }
 
 .freight {
