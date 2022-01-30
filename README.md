@@ -117,25 +117,29 @@ I min söklogik så använde jag den här metoden som är relativt ny för mig. 
 
 ### reduce()
 
-Även den här metoden är någonting som är nytt för mig.Reduce-metod lägger ihop alla värden i en array till ett enda värde. Jag upptäckte att detta var mycket användbart för att räkna ihop priser och kvantiteter. Metoden tar två parametrar. Den första är en funktion, den andra är startvärdet.
+Även den här metoden är någonting som är nytt för mig. Reduce är en metod som lägger ihop alla värden i en array till ett enda värde. Jag upptäckte att detta var mycket användbart för att räkna ihop priser och kvantiteter. Metoden tar två parametrar. Den första är en funktion, den andra är startvärdet.
 
-I exemplet nedan har jag använt reduce-metoden på min cart array för att räkna ihop hur många produkter som finns i arrayen för tillfället. total är accumulatorn och kvantiteten för varje objekt adderas hela tiden på total. Nollan, som är den andra parametern i funktionen är startsiffran. Det innebär att funktionen ska börja köra från 0. Från början är alltså total = 0. Sedan adderas kvantiteten från det första objektet på och då blir total = 1, osv...
+I exemplet nedan har jag använt reduce-metoden på min cart array för att räkna ihop hur många produkter som finns i arrayen för tillfället. total är accumulatorn och album är varje objekt i arrayen. Kvantiteten (album.quantity) för varje objekt adderas hela tiden på total. Nollan, som är den andra parametern i funktionen är startsiffran. Det innebär att funktionen ska börja köra från 0. Från början är alltså total = 0. Sedan adderas kvantiteten från det första objektet på och då blir total = 1, osv...
 
 ```Javascript
 
-{cart.reduce((total, quantity) => total = total + quantity.quantity, 0)}
+{cart.reduce((total, album) => total + album.quantity, 0)}
 
 ```
 
+Jag använder även reduce-metoden då jag ska räkna ihop totalsumman längst ned i varukorgen.
 
-
-## Vad gick bra och vad gick dåligt
+## Lätt och svårt
 
 Det som har varit mest utmanande för mig i det här projektet har varit att få ihop helheten och översätta all funktionalitet från Vanilla Javascript till JSX i React. Jag har fått tänka på ett nytt sätt och i vissa fall lära nytt, t.ex. reduce-metoden för att addera ihop priser och kvantiteter.
 
+### Det som var mest besvärligt att få till
+
 Fri frakt-logiken var någonting jag tyckte var extra svårt. Jag provade att göra det med en funktion först, men det blev inte rätt och jag visste inte hur jag skulle anropa funktionen automatiskt. Det landade till slut på en ternary operator. Om den totala summan överstiger 259 kronor eller mer, ska meddelandet "Det har fri frakt!" visas. I annat fall ska 259 minus den totala summan visas.
 
-Något som var väldigt lätt var att få till radens total. Först gjorde jag det mycket svårare än det behövde vara och försökte skicka iväg värden i en funktion, men när jag tänkte efter lite så var det faktiskt bara att multiplicera item.quantity med item.price inom måsvingar.
+### Byte av lösning
+
+Något som jag först gjorde onödigt svårt men som egentligen var väldigt lätt var att få till radens total. Först gjorde jag det mycket svårare än det behövde vara och försökte skicka iväg värden i en funktion, men när jag tänkte efter lite så var det faktiskt bara att multiplicera item.quantity med item.price inom måsvingar.
 
 ## Användargränssnittet
 
@@ -154,6 +158,16 @@ Hade jag fått utforma sidan fritt hade jag hellre byggt en helt egen "sida" til
 ## Resultat vs. planering
 
 Allting i mitt projekt gick enligt planeringen. Kundkorgen har en fullt fungerande logik och designen är genomförd med ett tillfredställande resultat. Jag har gjort allt som stod i min planering och sidan är byggd i enlighet med min Wireframe.
+
+## Förslag på förbättring
+
+Jag har inte full koll på useContext-hooken och jag har därför kladdat ned App.js som bör hållas ren. Detta kan vara ett gott exempel på förbättringspotential.
+
+## Vad jag valde att INTE implementera
+
+I min förra webbshop i programmering 1 gjorde jag så att ett meddelande om att vara redan ligger i kudkorgen dök upp då jag försökte lägga till ett album som redan fanns i kundkorgen. Den här gången gjorde jag så att kvantiteten i kundkorgen ökas på då man klickar på albumet fler gånger. Jag tycker den här lösningen är snyggare och mer användarvänlig.
+
+Först hade jag tänkt att ta med en soptunna för varje album i kundkorgen ifall man ångrar sig och vill ta bort albumet. För att spara plats gjorde jag inte det utan istället tas albumet bort då man minskar kvantiteten från 1 till 0. 
 
 ## Framtida möjligheter
 
