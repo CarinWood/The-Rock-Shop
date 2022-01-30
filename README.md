@@ -1,10 +1,12 @@
-# Installera följande 
+# Dokumentation
 
-``shell
+## Installera följande 
+
+```shell
 
    npm install react-icons
    npm install react-router-dom@6
-``
+```
 
 <details>
 <summary> # Getting Started with Create React App </summary>
@@ -86,9 +88,13 @@ Jag har lärt mig att arbeta i React, fått förståelse för vad SPA är samt l
 
 ## Några kodexempel
 
+### Ternary Operator
+
 Jag använde mig av en ternary operator för att  växla mellan att användaren ser Logga In / Mina sidor i navbaren beroende på om denne är inloggad eller ej. En ternary operator fungerar på samma sätt som en if-sats, men med fördelen att man kan använda använda den direkt i JSX-koden.
 
-Ternary operatorns fungerar på så sätt att om villkoret för den är sant, så visas den länken med kundkorgen. Är villkoret falskt renderas inte div:en.
+Ternary operatorn fungerar på så sätt att om villkoret för den är sant så utförs det som står efter ?. Är det falskt utförs det som står efter :
+
+ I detta exempel så är villkoret loggedIn. Är det sant så renderas länken Mina Sidor. Är det falskt renderas länken Logga in.
 
 ```javascript
 
@@ -97,6 +103,17 @@ Ternary operatorns fungerar på så sätt att om villkoret för den är sant, s�
 ```
 
 Jag tyckte att logiken var så enkel och användbar att jag använde ternary operators på flera ställen i min kod. Till exempel använde jag en ternary operator för att antingen visa hur mycket som användaren behöver köpa för till fri frakt vs. att fri frakt är uppnådd beroende på om villkoret att totalsummen är lika med eller större än 259 kronor är sant eller ej.
+
+### filter()
+
+I min söklogik så använde jag den här metoden som är relativt ny för mig. Den innebär att man loopar igenom arrayen och kollar om något av värdena i arrayen matchar de kriterier man ställer upp samt returerar det/de värdena som stämmer med kriterierna. I det här fallet sorterade jag ut artisten samt att de artistnamn som som innehåller det jag skrivit in i sökfältet. toLowerCase() innebär att det inte blir känsligt för stora bokstäver då allt görs om till små bokstäver.
+
+```Javascript
+         
+         const filteredAlbums = Albums.filter(album => {
+               return album.artist.toLowerCase().includes(searchValue.toLowerCase())
+})
+```
 
 ## Vad gick bra och vad gick dåligt
 
@@ -112,13 +129,17 @@ Jag har jobbat med färgerna svart och orange. Detta för att jag tycker det ser
 
 Jag tycker att det mest är tydligt och det är lätt att hitta köp-knapparna och kundkorgen. Det är inte särskilt mycket ondöig info utan fokus på de album man kan köpa. Länkarna i navbaren är tydliga i orange och det är lätt att navigera sig mellan sidorna.
 
-Jag valde att ge de mest relevanta siffrorna en rödorange färg i kundkorgen så att kunden ska ha koll på hur mycket den har handlat för.
+Jag valde att ge de mest slutsumman en rödorange färg i kundkorgen så att kunden ska ha koll på hur mycket denne har handlat för.
 
 ## Användaruppelevelsen
 
 Jag tycker att kundkorgen känns lite i vägen. Den lägger sig över albumen och det känns trångt i den. Jag är inte så förtjust i att man måste scrolla i kundkorgen då det blir för många album.
 
 Hade jag fått utforma sidan fritt hade jag hellre byggt en helt egen "sida" till kundkorgen som man klickar sig in på. Då hade allt fått mer plats. Jag hade kunnat göra albumen i kundkorgen mindre för att göra saker och ting mer luftigt, men valde ändå att göra albumen i kundkorgen hyfsat stora då jag vill att texten ska vara lättläst. Enligt mina Personas har jag relativt äldre personer som kunder och då är det viktigt att kontrasterna är skarpa och texten är tillräckligt stor. Det vore dumt att missa en köpare på grund av att de inte ser texten ordentligt.
+
+## Resultat vs. planering
+
+Allting i mitt projekt gick enligt planeringen. Kundkorgen har en fullt fungerande logik och designen är genomförd med ett tillfredställande resultat. Jag har gjort allt som stod i min planering och sidan är byggd i enlighet med min Wireframe.
 
 ## Framtida möjligheter
 

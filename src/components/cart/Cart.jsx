@@ -88,7 +88,7 @@ const Cart = () => {
             <div className='end-of-cart'>
                     <button onClick={handlePayment} className='checkout-btn'>Betala</button>
                     <div className='freightAndPrice'>
-                    {totalPrice >= 259 ? <p>Du har uppnått fri frakt!</p>  :<p>Du har {leftToFreeFreight - totalPrice} :- kvar till fri frakt</p>}
+                    {totalPrice >= 259 ? <p className='freight-message'>Du har uppnått fri frakt!</p>  :<p className='freight-message'>Du har {leftToFreeFreight - totalPrice} :- kvar till fri frakt</p>}
                       <h3 className='summary'>Summa:<span className='red-text'> {totalPrice} :- </span></h3>
               
                     </div>
