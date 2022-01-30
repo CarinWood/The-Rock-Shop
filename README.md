@@ -80,14 +80,46 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 </details>
 
+## Vad har jag lärt mig av uppgiften?
+
+Jag har lärt mig att arbeta i React, fått förståelse för vad SPA är samt lärt mig nya metoder inom Javascript. Jag har lärt mig att strukturera upp mitt arbete mer och skapa en tydlig mappstruktur.
+
 ## Några kodexempel
 
-Jag använde mig av någonting som kallas short circuit för att öppna och stänga kundkorgen. (Skriv mer om användningen av short circuit)
+Jag använde mig av en ternary operator för att  växla mellan att användaren ser Logga In / Mina sidor i navbaren beroende på om denne är inloggad eller ej. En ternary operator fungerar på samma sätt som en if-sats, men med fördelen att man kan använda använda den direkt i JSX-koden.
 
-## Svårt och lätt
+Ternary operatorns fungerar på så sätt att om villkoret för den är sant, så visas den länken med kundkorgen. Är villkoret falskt renderas inte div:en.
 
-Det som har varit mest utmanande för mig i det här projektet har varit att få ihop helheten och översätta all funktionalitet från vanille Javascript till JSX i React. Jag har fått tänka på ett nytt sätt och i vissa fall lära nytt, t.ex. reduce-metoden för att addera ihop priser och kvantiteter.
+``javascript
+
+    {loggedIn ? <Link className='link' to="/signed-in"><li className='list-item'>Mina Sidor</li></Link> :
+           <Link className='link' to="/sign-in"><li className='list-item'>Logga in</li></Link> }
+``
+
+Jag tyckte att logiken var så enkel och användbar att jag använde ternary operators på flera ställen i min kod. Till exempel använde jag en ternary operator för att antingen visa hur mycket som användaren behöver köpa för till fri frakt vs. att fri frakt är uppnådd beroende på om villkoret att totalsummen är lika med eller större än 259 kronor är sant eller ej.
+
+## Vad gick bra och vad gick dåligt
+
+Det som har varit mest utmanande för mig i det här projektet har varit att få ihop helheten och översätta all funktionalitet från Vanilla Javascript till JSX i React. Jag har fått tänka på ett nytt sätt och i vissa fall lära nytt, t.ex. reduce-metoden för att addera ihop priser och kvantiteter.
 
 Fri frakt-logiken var någonting jag tyckte var extra svårt. Jag provade att göra det med en funktion först, men det blev inte rätt och jag visste inte hur jag skulle anropa funktionen automatiskt. Det landade till slut på en ternary operator. Om den totala summan överstiger 259 kronor eller mer, ska meddelandet "Det har fri frakt!" visas. I annat fall ska 259 minus den totala summan visas.
 
 Något som var väldigt lätt var att få till radens total. Först gjorde jag det mycket svårare än det behövde vara och försökte skicka iväg värden i en funktion, men när jag tänkte efter lite så var det faktiskt bara att multiplicera item.quantity med item.price inom måsvingar.
+
+## Användargränssnittet
+
+Jag har jobbat med färgerna svart och orange. Detta för att jag tycker det ser fräckt och rockigt ut samt ger en skarp kontrast. Vidare har jag arbetat med linear gradient för att skapa ett resultat som påminner om eldsflammor. Jag förknippar rock med färgen svart och eld. Dock har jag använt linear-gradient på ett fåtal ställen för att inte ge ett för stökigt intryck utan göra det till en fräck detalj.
+
+Jag tycker att det mest är tydligt och det är lätt att hitta köp-knapparna och kundkorgen. Det är inte särskilt mycket ondöig info utan fokus på de album man kan köpa. Länkarna i navbaren är tydliga i orange och det är lätt att navigera sig mellan sidorna.
+
+Jag valde att ge de mest relevanta siffrorna en rödorange färg i kundkorgen så att kunden ska ha koll på hur mycket den har handlat för.
+
+## Användaruppelevelsen
+
+Jag tycker att kundkorgen känns lite i vägen. Den lägger sig över albumen och det känns trångt i den. Jag är inte så förtjust i att man måste scrolla i kundkorgen då det blir för många album.
+
+Hade jag fått utforma sidan fritt hade jag hellre byggt en helt egen "sida" till kundkorgen som man klickar sig in på. Då hade allt fått mer plats. Jag hade kunnat göra albumen i kundkorgen mindre för att göra saker och ting mer luftigt, men valde ändå att göra albumen i kundkorgen hyfsat stora då jag vill att texten ska vara lättläst. Enligt mina Personas har jag relativt äldre personer som kunder och då är det viktigt att kontrasterna är skarpa och texten är tillräckligt stor. Det vore dumt att missa en köpare på grund av att de inte ser texten ordentligt.
+
+## Framtida möjligheter
+
+Det har varit roligt och intressant att lära sig React. Jag ser stora möjligheter för mig på arbetsmarknaden med de här kunskaperna. React är ett av de populäraste Javascriptbiblioteken när det gäller att bygga webbsidor. Dock har vi i den här kursen bara skrapat på ytan och det finns mycket mer att lära, därför är det upp till mig att lägga ner mer tid på att lära mig React på ett djupare plan.

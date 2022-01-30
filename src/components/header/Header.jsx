@@ -5,7 +5,7 @@ import { FaShoppingBasket } from 'react-icons/fa';
 import NavBar from '../navbar/NavBar';
 import Cart from '../cart/Cart';
 import { LoginContext } from '../../context/LoginProvider';
-import { useNavigate } from 'react-router-dom'
+import { useNavigate, Link } from 'react-router-dom'
 import { CartContext } from '../../context/CartContext';
 
 
@@ -33,7 +33,7 @@ const Header = () => {
     <>
   <header>
      
-      <div className='logo'> The Rock Shop</div>
+      <div className='logo'><Link className='logo' to="/">The Rock Shop</Link></div>
      
       <SearchBar/>
 

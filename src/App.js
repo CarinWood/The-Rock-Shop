@@ -1,4 +1,3 @@
-import './App.css';
 import Header from './components/header/Header';
 import Routing from './routing/Routing'
 import {LoginContext} from './context/LoginProvider'
