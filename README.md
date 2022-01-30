@@ -90,11 +90,11 @@ Jag använde mig av en ternary operator för att  växla mellan att användaren 
 
 Ternary operatorns fungerar på så sätt att om villkoret för den är sant, så visas den länken med kundkorgen. Är villkoret falskt renderas inte div:en.
 
-``javascript
+```javascript
 
     {loggedIn ? <Link className='link' to="/signed-in"><li className='list-item'>Mina Sidor</li></Link> :
            <Link className='link' to="/sign-in"><li className='list-item'>Logga in</li></Link> }
-``
+```
 
 Jag tyckte att logiken var så enkel och användbar att jag använde ternary operators på flera ställen i min kod. Till exempel använde jag en ternary operator för att antingen visa hur mycket som användaren behöver köpa för till fri frakt vs. att fri frakt är uppnådd beroende på om villkoret att totalsummen är lika med eller större än 259 kronor är sant eller ej.
 
