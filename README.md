@@ -115,6 +115,20 @@ I min söklogik så använde jag den här metoden som är relativt ny för mig. 
 })
 ```
 
+### reduce()
+
+Även den här metoden är någonting som är nytt för mig.Reduce-metod lägger ihop alla värden i en array till ett enda värde. Jag upptäckte att detta var mycket användbart för att räkna ihop priser och kvantiteter. Metoden tar två parametrar. Den första är en funktion, den andra är startvärdet.
+
+I exemplet nedan har jag använt reduce-metoden på min cart array för att räkna ihop hur många produkter som finns i arrayen för tillfället. total är accumulatorn och kvantiteten för varje objekt adderas hela tiden på total. Nollan, som är den andra parametern i funktionen är startsiffran. Det innebär att funktionen ska börja köra från 0. Från början är alltså total = 0. Sedan adderas kvantiteten från det första objektet på och då blir total = 1, osv...
+
+```Javascript
+
+{cart.reduce((total, quantity) => total = total + quantity.quantity, 0)}
+
+```
+
+
+
 ## Vad gick bra och vad gick dåligt
 
 Det som har varit mest utmanande för mig i det här projektet har varit att få ihop helheten och översätta all funktionalitet från Vanilla Javascript till JSX i React. Jag har fått tänka på ett nytt sätt och i vissa fall lära nytt, t.ex. reduce-metoden för att addera ihop priser och kvantiteter.

@@ -1,7 +1,7 @@
 import React, {useState, useContext} from 'react';
 import './cart.css';
 import { CartContext } from '../../context/CartContext';
-import { FaShoppingBasket, FaPlusCircle, FaMinusCircle, FaTrashAlt } from 'react-icons/fa';
+import { FaShoppingBasket, FaPlusCircle, FaMinusCircle } from 'react-icons/fa';
 import { calculateNewValue } from '@testing-library/user-event/dist/utils';
 
 const Cart = () => {
