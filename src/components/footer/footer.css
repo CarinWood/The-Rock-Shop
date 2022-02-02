@@ -1,0 +1,6 @@
+.footer {
+    opacity: 0.6;
+    background-color: var(--background-color);
+    color: black;
+    font-size: 20px;
+}

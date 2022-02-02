@@ -1,6 +1,6 @@
 # Dokumentation
 
-## Installera följande 
+## Installera följande
 
 ```shell
 
@@ -88,6 +88,8 @@ Jag har lärt mig att arbeta i React, fått förståelse för vad SPA är samt l
 
 ## Några kodexempel
 
+Jag har först och främst valt att använda mig av de funktioner, metoder och hooks jag har lärt mig under kursen. Då jag upplevde att detta inte var tillräckligt för att lösa uppgiften på ett enkelt sätt valde jag att leta efter ytterligare lösningar på nätet. Nedan följer några exempel på kod som jag tycker är smidiga att använda till det här projektet.
+
 ### Ternary Operator
 
 Jag använde mig av en ternary operator för att  växla mellan att användaren ser Logga In / Mina sidor i navbaren beroende på om denne är inloggad eller ej. En ternary operator fungerar på samma sätt som en if-sats, men med fördelen att man kan använda använda den direkt i JSX-koden.
@@ -163,11 +165,13 @@ Allting i mitt projekt gick enligt planeringen. Kundkorgen har en fullt fungeran
 
 Jag har inte full koll på useContext-hooken och jag har därför kladdat ned App.js som bör hållas ren. Detta kan vara ett gott exempel på förbättringspotential.
 
+Jag hade helst velat att det går att avmarkera den vita ramen runt det sökta albumet, men jag har inte hittat någon lösning på hur man ska göra detta.
+
 ## Vad jag valde att INTE implementera
 
 I min förra webbshop i programmering 1 gjorde jag så att ett meddelande om att vara redan ligger i kudkorgen dök upp då jag försökte lägga till ett album som redan fanns i kundkorgen. Den här gången gjorde jag så att kvantiteten i kundkorgen ökas på då man klickar på albumet fler gånger. Jag tycker den här lösningen är snyggare och mer användarvänlig.
 
-Först hade jag tänkt att ta med en soptunna för varje album i kundkorgen ifall man ångrar sig och vill ta bort albumet. För att spara plats gjorde jag inte det utan istället tas albumet bort då man minskar kvantiteten från 1 till 0. 
+Först hade jag tänkt att ta med en soptunna för varje album i kundkorgen ifall man ångrar sig och vill ta bort albumet. För att spara plats gjorde jag inte det utan istället tas albumet bort då man minskar kvantiteten från 1 till 0.
 
 ## Framtida möjligheter
 

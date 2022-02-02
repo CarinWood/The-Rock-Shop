@@ -2,6 +2,7 @@ import React, {useState, useContext} from 'react';
 import { useNavigate} from 'react-router-dom'
 import './signin.css'
 import { LoginContext } from '../../context/LoginProvider';
+import Footer from '../../components/footer/Footer';
 
 const SignIn = () => {
 
@@ -29,6 +30,7 @@ const navigate = useNavigate()
     }
 
   return (
+    <>
   <div className='signin-container'>
         <div className='signin-card'>
           <h2 className='signin-headline'>Logga in på Mina Sidor</h2>
@@ -57,11 +59,13 @@ const navigate = useNavigate()
               >
                 Logga in
               </button>
-       
+             
         </div>
-      
-        
+        <Footer/> 
   </div>
+
+  
+  </>
   )
 };
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import Cart from '../../components/cart/Cart';
+import Footer from '../../components/footer/Footer';
 import Products from '../../components/products/Products';
 import './home.css'
 
@@ -11,7 +11,7 @@ const Home = () => {
          Glöm inte att hos oss får du alltid fri frakt om du handlar för 259:- eller mer! 
       </p>
       <Products/>
-    
+      <Footer/>
   </div>;
 };
 

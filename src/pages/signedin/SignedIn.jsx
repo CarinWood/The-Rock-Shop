@@ -1,4 +1,5 @@
 import React from 'react';
+import Footer from '../../components/footer/Footer';
 import './signedIn.css'
 
 
@@ -29,7 +30,7 @@ const SignedIn = () => {
 
       </div>
 
-
+     <Footer/>
   </div>
   )
 };

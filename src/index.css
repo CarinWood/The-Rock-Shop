@@ -14,3 +14,13 @@ body {
   font-family: "Outfit", sans-serif;
 }
 
+/* Style Guide */
+
+:root {
+      --primary-color: orange;
+      --secondary-color: black;
+      --background-color: gray;
+      --hover-color: rgb(248, 188, 77);
+}
+
+
