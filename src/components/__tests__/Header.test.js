@@ -14,3 +14,9 @@ test("check if button renders with correct text", () => {
     expect(getByTestId('cart-btn').textContent).toBe("Varukorg")
 })
 
+
+test("check if counter renders with correct digit", () => {
+    const {getByTestId} = render(<App/>)
+    expect(getByTestId('counter').textContent).toBe("0")
+})
+
