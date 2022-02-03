@@ -35,6 +35,7 @@ const SearchBar = () => {
     <>
   <form className='search-container'>
       <input 
+      data-testid="input"
       className='searchbar' 
       type="text" 
       placeholder="Sök..."
