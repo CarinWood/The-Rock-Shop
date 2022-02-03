@@ -33,7 +33,7 @@ const Header = () => {
     <>
   <header>
      
-      <div className='logo'><Link className='logo' to="/">The Rock Shop</Link></div>
+      <div className='logo' data-testid="logotext"><Link className='logo' to="/" >The Rock Shop</Link></div>
      
       <SearchBar/>
 
@@ -42,7 +42,7 @@ const Header = () => {
           <div onClick={showCart} className='basket-div'>
               <FaShoppingBasket className="basket-icon" />
               <p className='digit'>{cart.reduce((total, album) => total + album.quantity, 0)}</p>
-              <button  className='header-btn' type="button" data-testid="cart">Varukorg</button>
+              <button  className='header-btn' type="button" title="dummyButton">Varukorg</button>
           </div>
   </header>
       <NavBar/>
