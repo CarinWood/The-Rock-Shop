@@ -31,20 +31,21 @@ const Header = () => {
 
   return (
     <>
-  <header>
-     
-      <div className='logo' data-testid="logotext"><Link className='logo' to="/" >The Rock Shop</Link></div>
-     
-      <SearchBar/>
+      <header>
+        
+          <div className='logo' data-testid="logotext"><Link className='logo' to="/" >The Rock Shop</Link></div>
+        
+          <SearchBar/>
 
-          {loggedIn? <p className='membername'>Carin <span onClick={logOutFunc} className='logout'>(Logga ut)</span></p>: null}
+              {loggedIn? <p className='membername'>Carin <span onClick={logOutFunc} className='logout'>(Logga ut)</span></p>: null}
 
-          <div onClick={showCart} className='basket-div'>
-              <FaShoppingBasket className="basket-icon" />
-              <p data-testid="counter" className='digit'>{cart.reduce((total, album) => total + album.quantity, 0)}</p>
-              <button  className='header-btn' type="button" data-testid="cart-btn">Varukorg</button>
-          </div>
-  </header>
+              <div onClick={showCart} className='basket-div'>
+                  <FaShoppingBasket className="basket-icon" />
+                  <p data-testid="counter" className='digit'>{cart.reduce((total, album) => total + album.quantity, 0)}</p>
+                  <button  className='header-btn' type="button" data-testid="cart-btn">Varukorg</button>
+              </div>
+      </header>
+      
       <NavBar/>
       {ShowingCart && <Cart/>}
       

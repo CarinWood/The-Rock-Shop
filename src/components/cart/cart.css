@@ -18,7 +18,7 @@ color: var(--secondary-color);
 
 .cart-outer-wrapper {
     padding-top: 0px;
-    overflow-y:scroll;
+    overflow-y: scroll;
     width: 100%;
     margin-bottom: 70px;
     z-index: 2;
@@ -164,8 +164,8 @@ color: var(--secondary-color);
 }
 
 .freight-message {
-        margin: 0px;
-        padding-bottom: 3px;
+    margin: 0px;
+    padding-bottom: 3px;
 
 }
 

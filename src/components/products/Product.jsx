@@ -1,18 +1,17 @@
 import React, {useContext} from 'react';
-
 import { CartContext } from '../../context/CartContext';
 
 const Product = ({album}) => {
 
   const [cart, setCart] = useContext(CartContext)
 
-  const addToCart = (album) => {
-    const productExist = cart.find((item) => item.id === album.id)
+  const addToCart = (product) => {
+    const productExist = cart.find((item) => item.id === product.id)
     if (productExist) {
-      setCart(cart.map((item) => item.id === album.id ? 
+      setCart(cart.map((item) => item.id === product.id ? 
       {...productExist, quantity: productExist.quantity + 1} : item))
     } else {
-      setCart([...cart, {...album, quantity: 1}])
+      setCart([...cart, {...product, quantity: 1}])
     }
   }
 

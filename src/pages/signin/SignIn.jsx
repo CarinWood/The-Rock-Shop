@@ -53,11 +53,11 @@ const navigate = useNavigate()
               </form>
 
               <button 
-              className="signin-btn" 
-              type="button"
-              onClick={checkUser}
-              >
-                Logga in
+                  className="signin-btn" 
+                  type="button"
+                  onClick={checkUser}
+                  >
+                    Logga in
               </button>
              
         </div>
