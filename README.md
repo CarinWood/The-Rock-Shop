@@ -161,6 +161,12 @@ Hade jag fått utforma sidan fritt hade jag hellre byggt en helt egen "sida" til
 
 Allting i mitt projekt gick enligt planeringen. Kundkorgen har en fullt fungerande logik och designen är genomförd med ett tillfredställande resultat. Jag har gjort allt som stod i min planering och sidan är byggd i enlighet med min Wireframe.
 
+## tester
+
+Jag har byggt några enkla automatiserade tester för att bland annat säkerställa att sidan renderas med rätt text i några av komponenterna. Jag har även testat en av funktionerna i sökfältet.
+
+Jag har manuellt kollat igenom sidan så att allting fungerar med tillfredställande resultat. Jag har testat sidan i olika webbläsare och allt ser likadant ut.
+
 ## Förslag på förbättring
 
 Jag har inte full koll på useContext-hooken och jag har därför kladdat ned App.js som bör hållas ren. Detta kan vara ett gott exempel på förbättringspotential.

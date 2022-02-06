@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import './searchbar.css';
 import Albums from '../../data/AlbumData';
+import { IoCloseOutline } from "react-icons/io5";
 
 
 const SearchBar = () => {
@@ -48,7 +49,7 @@ const SearchBar = () => {
                     className='delete-input'
                     type="button" 
                     onClick={handleClearClick}>
-                    <i className='bx bx-x'></i>
+                    <IoCloseOutline className='close'/>
                 </button>
                 }
           </form>
