@@ -5,17 +5,35 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+    overflow-x: hidden;
 }
 
 .home-headline {
+    font-weight: 600;
     margin-top: 0px;
     padding-top: 70px;
     letter-spacing: 1.5px;
 }
 
 .text-body {
-    max-width: 40%;
+    width: 40%;
     font-size: 22px;
+    font-weight: 500;
     line-height: 1.3em;
     word-spacing: 4px;
 }
+
+
+ @media screen and (max-width: 992px) {
+    .text-body {
+        width: 60%;
+    }
+ }
+
+
+ @media (max-width: 767px) {
+     .text-body {
+         width: 80%;
+         font-size: 18px;
+     }
+ }

@@ -3,6 +3,7 @@ import Footer from '../../components/footer/Footer';
 import Products from '../../components/products/Products';
 import './home.css'
 
+
 const Home = () => {
   return <div className='home-container'>
       <h1 className='home-headline'>Populär produkter</h1>

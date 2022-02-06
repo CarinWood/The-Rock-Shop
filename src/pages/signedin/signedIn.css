@@ -129,3 +129,27 @@
     text-decoration: underline;
 }
 
+
+@media screen and (max-width: 992px) {
+    .membership-card {
+        width: 650px;
+        height: 35vh;
+    }
+
+    .logotype {
+        font-size: 40px;
+    }
+
+    .gold {
+        font-size: 15px;
+    }
+   
+    .circle {
+        margin-right: 30px;
+    }
+
+    .main-text {
+        margin-left: 30px;  
+    }
+}
+

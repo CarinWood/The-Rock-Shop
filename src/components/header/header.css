@@ -7,7 +7,6 @@ header {
     justify-content: space-between;
     align-items: center;   
     background-color: var(--background-color);
-    font-family: 'Outfit', sans-serif;
 }
 
 .logo {
@@ -43,7 +42,6 @@ header {
 }
 
 .header-btn {
-    font-family: 'Outfit', sans-serif;
     font-size: 22px;
     font-weight: 700;
     letter-spacing: 1.5px;
@@ -86,4 +84,48 @@ header {
     margin-left: 25px;
     margin-bottom: 20px;
     cursor: pointer;
+}
+
+
+@media screen and (max-width: 992px) {
+    header {
+        padding-left: 20px;
+        padding-right: 0px;
+        justify-content: flex-start;
+        overflow-x: hidden;
+    }
+
+    .logo {
+        margin-right: 10px;
+    }
+
+    .basket-div {
+        margin-left: 0px;
+    }
+
+   .membername {
+       position: absolute;
+       top: 8%;
+       right: 10%;
+   }
+}
+
+@media (max-width: 767px) {
+    header {
+        padding-left: 5px,
+
+    }
+
+    .logo {
+        font-size: 24px;
+        margin-right: 0px;
+        width: 150px;
+      
+    }
+
+    .header-btn {
+        font-size: 18px;
+        letter-spacing: 1.2px;
+    }
+ 
 }

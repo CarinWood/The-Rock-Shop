@@ -13,6 +13,7 @@ justify-content: flex-start;
 align-items: center;
 box-sizing: border-box;
 color: var(--secondary-color);
+z-index: 100;
 
 }
 
@@ -175,6 +176,44 @@ color: var(--secondary-color);
     color: orangered;
     font-weight: 900;
     font-size: 25px;
+    letter-spacing: 0.2px;
+}
+
+
+
+
+@media screen and (max-width: 992px) {
+    .cart-container {
+        width: 60%;
+        height: 60vh;      
+    }
+}
+
+@media (max-width: 767px) {
+    .cart-container {
+        width: 100%;     
+    }
+
+    .checkout-btn {
+    font-size: 18px;
+    letter-spacing: 1.2px;
+    }
+
+    .placehoder-text {
+        font-size: 28px;
+    }
+
+    .cart-logo {
+        font-size: 55px;
+    }
+
+    .summary {
+        font-size: 22px;
+    }
+
+    .red-text {
+        font-size: 22px;
+    }
 }
 
 

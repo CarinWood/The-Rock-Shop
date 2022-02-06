@@ -1,15 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 
 @font-face {
   font-family: 'Bebas Neue';
   src: local('./assets/fonts/BebasNeue-Regular.ttf') format('ttf')  
 }
 
+
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Outfit", sans-serif;
+  font-family:sans-serif;
+  font-style: normal;
 }
 
 /* Style Guide */

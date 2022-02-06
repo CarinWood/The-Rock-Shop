@@ -34,3 +34,22 @@ nav {
 .color {
     color: var(--primary-color);
 }
+
+
+@media (max-width: 992px) {
+    .navlist {
+        padding-left: 0px;
+    }
+}
+
+
+@media (max-width: 767px)  {
+    .list-item {
+        font-size: 14px;
+    } 
+    
+    .navlist {
+        justify-content: space-around;
+     
+    }
+}

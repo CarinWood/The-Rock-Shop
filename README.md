@@ -108,7 +108,7 @@ Jag tyckte att logiken var så enkel och användbar att jag använde ternary ope
 
 ### filter()
 
-I min söklogik så använde jag den här metoden som är relativt ny för mig. Den innebär att man loopar igenom arrayen och kollar om något av värdena i arrayen matchar de kriterier man ställer upp samt returerar det/de värdena som stämmer med kriterierna. I det här fallet sorterade jag ut artisten samt att de artistnamn som som innehåller det jag skrivit in i sökfältet. toLowerCase() innebär att det inte blir känsligt för stora bokstäver då allt görs om till små bokstäver.
+I min söklogik så använde jag den här metoden som är relativt ny för mig. Den innebär att man loopar igenom arrayen och kollar om något av värdena i arrayen matchar de kriterier man ställer upp samt returerar det/de värdena som stämmer med kriterierna. I det här fallet sorterade jag ut artisten samt att de artistnamn som som innehåller det jag skrivit in i sökfältet. toLowerCase() innebär att det inte blir känsligt för stora bokstäver, då allt görs om till små bokstäver.
 
 ```Javascript
          
@@ -155,7 +155,9 @@ Jag valde att ge de mest slutsumman en rödorange färg i kundkorgen så att kun
 
 Jag tycker att kundkorgen känns lite i vägen. Den lägger sig över albumen och det känns trångt i den. Jag är inte så förtjust i att man måste scrolla i kundkorgen då det blir för många album.
 
-Hade jag fått utforma sidan fritt hade jag hellre byggt en helt egen "sida" till kundkorgen som man klickar sig in på. Då hade allt fått mer plats. Jag hade kunnat göra albumen i kundkorgen mindre för att göra saker och ting mer luftigt, men valde ändå att göra albumen i kundkorgen hyfsat stora då jag vill att texten ska vara lättläst. Enligt mina Personas har jag relativt äldre personer som kunder och då är det viktigt att kontrasterna är skarpa och texten är tillräckligt stor. Det vore dumt att missa en köpare på grund av att de inte ser texten ordentligt.
+Hade jag fått utforma sidan fritt hade jag hellre byggt en helt egen "sida" till kundkorgen som man klickar sig in på. Nu förstod jag dock uppgiften så att man skulle göra en kundkorg som fälls ut. En egen sida till kundkorgen hade gjort så att allt fått mer plats. Jag hade kunnat göra albumen i kundkorgen mindre för att göra saker och ting mer luftigt, men valde ändå att göra albumen i kundkorgen hyfsat stora då jag vill att texten ska vara lättläst.
+
+Enligt mina Personas har jag relativt äldre personer som kunder och då är det viktigt att kontrasterna är skarpa och texten är tillräckligt stor. Det vore dumt att missa en köpare på grund av att de inte ser texten ordentligt.
 
 ## Resultat vs. planering
 
@@ -165,17 +167,17 @@ Allting i mitt projekt gick enligt planeringen. Kundkorgen har en fullt fungeran
 
 Jag har byggt några enkla automatiserade tester för att bland annat säkerställa att sidan renderas med rätt text i några av komponenterna. Jag har även testat en av funktionerna i sökfältet.
 
-Jag har manuellt kollat igenom sidan så att allting fungerar med tillfredställande resultat. Jag har testat sidan i olika webbläsare och allt ser likadant ut.
+Jag har manuellt kollat igenom sidan så att allting fungerar med tillfredställande resultat. Jag har testat sidan i olika webbläsare och allt ser likadant ut och är fungerande.
 
 ## Förslag på förbättring
 
-Jag har inte full koll på useContext-hooken och jag har därför kladdat ned App.js som bör hållas ren. Detta kan vara ett gott exempel på förbättringspotential.
+Jag kunde ha lagt ned tid på media queries för att göra shoppen snygg även i tablet- och mobilläge.
 
 Jag hade helst velat att det går att avmarkera den vita ramen runt det sökta albumet, men jag har inte hittat någon lösning på hur man ska göra detta.
 
 ## Vad jag valde att INTE implementera
 
-I min förra webbshop i programmering 1 gjorde jag så att ett meddelande om att vara redan ligger i kudkorgen dök upp då jag försökte lägga till ett album som redan fanns i kundkorgen. Den här gången gjorde jag så att kvantiteten i kundkorgen ökas på då man klickar på albumet fler gånger. Jag tycker den här lösningen är snyggare och mer användarvänlig.
+I min förra webbshop i programmering 1 gjorde jag så att ett meddelande om att varan redan ligger i kudkorgen dök upp då jag försökte lägga till ett album som redan fanns i kundkorgen. Den här gången gjorde jag så att kvantiteten i kundkorgen ökas på då man klickar på albumet fler gånger. Jag tycker den här lösningen är snyggare och mer användarvänlig.
 
 Först hade jag tänkt att ta med en soptunna för varje album i kundkorgen ifall man ångrar sig och vill ta bort albumet. För att spara plats gjorde jag inte det utan istället tas albumet bort då man minskar kvantiteten från 1 till 0.
 

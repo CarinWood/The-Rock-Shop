@@ -79,3 +79,29 @@
     color: white;
     font-weight: 700;
 }
+
+
+
+@media screen and (max-width: 992px) {
+    .searchbar {
+        font-size: 22px;
+        margin-left: 0px;              
+    }
+       
+    .search-container {
+        margin-right: 40px;
+        margin-top: 20px;
+    }
+
+    .result-list {
+        top: 8%;
+        left: 30%;
+    }
+}
+
+@media (max-width: 767px) {
+    .search-container {
+        visibility: hidden;
+        width: 1%;
+    }
+}
